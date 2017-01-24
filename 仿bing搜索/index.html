@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bing search</title>
+<style>
+body{
+	background: url(images/bg.jpg) no-repeat;
+}
+.container{
+	position: absolute;
+	top: 200px;
+	left: 300px;
+}
+form{
+	width: 350px;
+	background: #fff;
+}
+.logo,form{
+	float:left;
+	margin-left: 10px;
+}
+input{
+	border: 0;
+	padding: 0;
+	float: left;
+}
+input[type=text]{
+	width: 300px;
+	line-height: 50px;
+	font-size: 1.3em;
+	font-family: "微软雅黑";
+	margin-left: 4px;
+	outline: none;
+}
+input[type=submit]{
+	width: 42px;
+	margin: 4px 4px;
+	margin-left: 0;
+	height: 42px;
+	background: url(images/search.png) -4px -6px no-repeat;
+}
+ul{
+	position: absolute;
+	top: 230px;
+	left: 427px;
+	border: 1px solid #aaa;
+	width: 348px;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+ul li:hover{
+	background: #ccc;
+	text-decoration: underline;
+}
+.suggest{
+	background: #fff;
+	font-size: 1.3em;
+	font-family: "微软雅黑";
+}
+</style>
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="logo"><img src="images/logo.png" alt=""></div>
+		<form action="">
+			<input id="search-text" type="text">
+			<input type="submit" value="">
+		</form>
+	</div>
+	<ul class="suggest">
+			<li>tip 1</li>
+			<li>tip 2</li>
+	</ul>
+	<script>
+		var input = $(".suggest");
+		var text = $("#search-text");
+		input.hide();
+		text.bind('keyup',function() {
+			var textVal = text.val();
+			if (textVal==""){
+				input.hide();
+			}else{
+				input.show();
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>鼠标滑过|点击切换选项卡</title>
+  <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title">
+  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title">
+  <link rel="stylesheet" href="css/tf-css.css" media="screen" title="no title">
+<script src="js/script.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default" id="tf-nav" role="navigation">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li id="tf-title"><a href="#"><h2>各种Tab标签</h2></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="tf-container">
+    <div class="radio">
+      <input name="Fruit" type="button" value="鼠标滑过切换"  class="btn btn-success btn-lg"/>
+      <input name="Fruit" type="button" value="鼠标点击切换" class="btn btn-success btn-lg"/>
+      <input name="Fruit" type="button" value="自动切换" class="btn btn-success btn-lg"/>
+      <input name="Fruit" type="button" value="自动切换+鼠标滑过切换" class="btn btn-success btn-lg"/>
+    </div>
+    <div class="tabs">
+      <ol>
+        <li>
+          <div class="tab" id="ontab">
+            <div class="tits">
+              <ol>
+                <a href="#"><li class="tab-tit">标签1</li></a>
+                <a href="#"><li class="tab-tit">标签2</li></a>
+                <a href="#"><li class="tab-tit">标签3</li></a>
+                <a href="#"><li class="tab-tit">标签4</li></a>
+              </ol>
+            </div>
+            <ul class="content" id="oncon">
+              <li class="con-tit">标签1----内容A1</li>
+              <li class="con-tit">标签1----内容B</li>
+              <li class="con-tit">标签1----内容C</li>
+              <li class="con-tit">标签1----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签2----内容A</li>
+              <li class="con-tit">标签2----内容B</li>
+              <li class="con-tit">标签2----内容C</li>
+              <li class="con-tit">标签2----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签3----内容A</li>
+              <li class="con-tit">标签3----内容B</li>
+              <li class="con-tit">标签3----内容C</li>
+              <li class="con-tit">标签3----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签4----内容A</li>
+              <li class="con-tit">标签4----内容B</li>
+              <li class="con-tit">标签4----内容C</li>
+              <li class="con-tit">标签4----内容D</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="tab">
+            <div class="tits">
+              <ol>
+                <a href="#"><li class="tab-tit">标签1</li></a>
+                <a href="#"><li class="tab-tit">标签2</li></a>
+                <a href="#"><li class="tab-tit">标签3</li></a>
+                <a href="#"><li class="tab-tit">标签4</li></a>
+              </ol>
+            </div>
+            <ul class="content">
+              <li class="con-tit">标签1----内容A2</li>
+              <li class="con-tit">标签1----内容B</li>
+              <li class="con-tit">标签1----内容C</li>
+              <li class="con-tit">标签1----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签2----内容A</li>
+              <li class="con-tit">标签2----内容B</li>
+              <li class="con-tit">标签2----内容C</li>
+              <li class="con-tit">标签2----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签3----内容A</li>
+              <li class="con-tit">标签3----内容B</li>
+              <li class="con-tit">标签3----内容C</li>
+              <li class="con-tit">标签3----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签4----内容A</li>
+              <li class="con-tit">标签4----内容B</li>
+              <li class="con-tit">标签4----内容C</li>
+              <li class="con-tit">标签4----内容D</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="tab">
+            <div class="tits">
+              <ol>
+                <a href="#"><li class="tab-tit">标签1</li></a>
+                <a href="#"><li class="tab-tit">标签2</li></a>
+                <a href="#"><li class="tab-tit">标签3</li></a>
+                <a href="#"><li class="tab-tit">标签4</li></a>
+              </ol>
+            </div>
+            <ul class="content">
+              <li class="con-tit">标签1----内容A3</li>
+              <li class="con-tit">标签1----内容B</li>
+              <li class="con-tit">标签1----内容C</li>
+              <li class="con-tit">标签1----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签2----内容A</li>
+              <li class="con-tit">标签2----内容B</li>
+              <li class="con-tit">标签2----内容C</li>
+              <li class="con-tit">标签2----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签3----内容A</li>
+              <li class="con-tit">标签3----内容B</li>
+              <li class="con-tit">标签3----内容C</li>
+              <li class="con-tit">标签3----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签4----内容A</li>
+              <li class="con-tit">标签4----内容B</li>
+              <li class="con-tit">标签4----内容C</li>
+              <li class="con-tit">标签4----内容D</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="tab">
+            <div class="tits">
+              <ol>
+                <a href="#"><li class="tab-tit">标签1</li></a>
+                <a href="#"><li class="tab-tit">标签2</li></a>
+                <a href="#"><li class="tab-tit">标签3</li></a>
+                <a href="#"><li class="tab-tit">标签4</li></a>
+              </ol>
+            </div>
+            <ul class="content">
+              <li class="con-tit">标签1----内容A4</li>
+              <li class="con-tit">标签1----内容B</li>
+              <li class="con-tit">标签1----内容C</li>
+              <li class="con-tit">标签1----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签2----内容A</li>
+              <li class="con-tit">标签2----内容B</li>
+              <li class="con-tit">标签2----内容C</li>
+              <li class="con-tit">标签2----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签3----内容A</li>
+              <li class="con-tit">标签3----内容B</li>
+              <li class="con-tit">标签3----内容C</li>
+              <li class="con-tit">标签3----内容D</li>
+            </ul>
+            <ul class="content">
+              <li class="con-tit">标签4----内容A</li>
+              <li class="con-tit">标签4----内容B</li>
+              <li class="con-tit">标签4----内容C</li>
+              <li class="con-tit">标签4----内容D</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+<div class="footer">
+
+</div>
+</body>
+</html>
